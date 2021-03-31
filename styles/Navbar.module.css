@@ -1,0 +1,29 @@
+.Navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 10;
+    margin-top: 10px;
+}
+
+.navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 75px;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.listItem {
+    margin: 20px;
+}
+
+.listItem:hover {
+    color: var(--secondary);
+}
