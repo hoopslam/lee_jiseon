@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap');
+
+:root {
+  --primary: rgb(80, 80, 80);
+  --secondary: rgb(0, 183, 255);
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Assistant', sans-serif;
 }
 
 a {
