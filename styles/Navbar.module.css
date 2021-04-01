@@ -10,12 +10,13 @@
 .navbarContainer {
     display: flex;
     justify-content: space-between;
-    padding: 0 75px;
+    align-items: center;
+    padding: 0 30px;
 }
 
 .list{
     list-style: none;
-    display: flex;
+    display: none;
     font-size: 1.3rem;
     margin: 0;
 }
@@ -26,4 +27,83 @@
 
 .listItem:hover {
     color: var(--secondary);
+}
+
+.hamburger {
+    display: block;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.hamburger .bar, .hamburger::before, .hamburger::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(160, 160, 160);
+    margin: 5px 0px;
+    transition: 0.6s;
+}
+
+.hamburger.active::before {
+    transform: rotate(225deg) translate(-5px, -5px);
+    background-color: white;
+}
+
+.hamburger.active::after {
+    transform: rotate(135deg) translate(-5px, 5px);
+    background-color: white;
+}
+
+.hamburger.active .bar {
+    transform: rotate(315deg);
+}
+
+.list.active {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(78, 78, 78, 0.8);
+    color: white;
+}
+
+@media screen and (min-width: 900px) {
+    
+    .navbarContainer {
+        padding: 0 75px;
+    }
+
+    .list {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
+    }
+    .list.active {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 0;
+        width: auto;
+        height: auto;
+        background-color: white;
+        color: rgb(160, 160, 160);
+    }
+    
 }

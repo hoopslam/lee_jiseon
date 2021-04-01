@@ -9,7 +9,7 @@ export default function Home() {
 				<div className={styles.headerContentContainer}>
 					<h1 className={styles.headerContentTitle}>LEE JI SEON</h1>
           <h2 className={styles.headerContentSubtitle}>PORTFOLIO</h2>
-					<p className={styles.headerContentDescription}>Hello!<br/>I'm an illustrator,<br/>motion graphics designer, <br/>and butler to my cat</p>
+					<p className={styles.headerContentDescription}>Motion Graphic Designer<br/>Illustrator<br/>Cat Butler</p>
 				</div>
         <div className={styles.hero}>
 					<Image
@@ -22,13 +22,21 @@ export default function Home() {
 				</div>
 			</header>
 			<section id='animations' className={styles.animations}>
-				animations
+				<h1>ANIMATIONS</h1>
+				<div className={styles.gridContainer}>
+					<div className={styles.gridItem}>item</div>
+					<div className={styles.gridItem}>item</div>
+					<div className={styles.gridItem}>item</div>
+					<div className={styles.gridItem}>item</div>
+					<div className={styles.gridItem}>item</div>
+					<div className={styles.gridItem}>item</div>
+				</div>
 			</section>
 			<section id='illustrations' className={styles.illustrations}>
-				illustrations
+				<h1>ILLUSTRATIONS</h1>
 			</section>
 			<section id='contact' className={styles.contact}>
-				contact me
+				<h1>CONTACT ME</h1>
 			</section>
 		</Layout>
 	);
