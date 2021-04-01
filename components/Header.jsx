@@ -3,7 +3,7 @@ import ArrowButton from "./ArrowButton";
 import styles from "../styles/Header.module.css"
 import Image from "next/image"
 
-const Header = () => {
+const Header = ({next}) => {
 	return (
 		<section className={styles.header}>
 			<header id='home' className={styles.headerContainer}>
@@ -28,7 +28,7 @@ const Header = () => {
 					/>
 				</div>
 			</header>
-			<ArrowButton />
+			<ArrowButton next={next}/>
 		</section>
 	);
 };
