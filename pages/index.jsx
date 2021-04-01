@@ -12,8 +12,8 @@ export default function Home() {
 		<Layout>
 			<Header next={'animations'}/>
 			<Section section={'animations'} sectionData={animations} next={'illustrations'} />
-			<Section section={'illustrations'} sectionData={animations} next={'infographics'}/>
-			<Section section={'infographics'} sectionData={animations} next={'contact'}/>
+			{/* <Section section={'illustrations'} sectionData={animations} next={'infographics'}/>
+			<Section section={'infographics'} sectionData={animations} next={'contact'}/> */}
 
 			<section id='contact' className={styles.contact}>
 				<h2>CONTACT ME</h2>

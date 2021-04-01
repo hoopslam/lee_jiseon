@@ -9,7 +9,7 @@ const Section = ({section, sectionData, next}) => {
 			<h2 className={styles.sectionTitle}>{section}</h2>
 			<div className={styles.gridContainer}>
 				{sectionData.map((data) => (
-					<div className={styles.gridItem}>
+					<div key={data.id} className={styles.gridItem}>
 						<Image src={data.thumb} width={300} height={300} />
 					</div>
 				))}

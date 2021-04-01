@@ -12,7 +12,7 @@ const Navbar = () => {
 					<Link href='#home'>
 						<a>
 							<Image
-								src='/../public/assets/icon/home-icon-01.png'
+								src='/assets/icon/home-icon-01.png'
 								alt='home icon'
 								width={35}
 								height={35}
