@@ -1,42 +1,56 @@
+import { useState } from "react";
 import styles from "../styles/Home.module.css";
 import Layout from "../components/Layout";
 import Image from "next/image";
+import Link from "next/link";
+import animations from "../public/assets/animations/animations";
+import Header from "../components/Header"
 
 export default function Home() {
+	const [modalActive, setModalActive] = useState(false);
+
 	return (
 		<Layout>
-			<header id='home' className={styles.headerContainer}>
-				<div className={styles.headerContentContainer}>
-					<h1 className={styles.headerContentTitle}>LEE JI SEON</h1>
-          <h2 className={styles.headerContentSubtitle}>PORTFOLIO</h2>
-					<p className={styles.headerContentDescription}>Motion Graphic Designer<br/>Illustrator<br/>Cat Butler</p>
-				</div>
-        <div className={styles.hero}>
-					<Image
-						src='/../public/hero.jpg'
-						alt='Characterized picture of Lee Jiseon with her cat'
-						layout="fill"
-            objectFit="contain"
-            quality={100}
-					/>
-				</div>
-			</header>
+			<Header />
 			<section id='animations' className={styles.animations}>
-				<h1>ANIMATIONS</h1>
+				<h2>ANIMATIONS</h2>
 				<div className={styles.gridContainer}>
-					<div className={styles.gridItem}>item</div>
-					<div className={styles.gridItem}>item</div>
-					<div className={styles.gridItem}>item</div>
-					<div className={styles.gridItem}>item</div>
-					<div className={styles.gridItem}>item</div>
-					<div className={styles.gridItem}>item</div>
+					{animations.map((animation) => (
+						<div className={styles.gridItem}>
+							<Image src={animation.thumb} width={300} height={300} />
+						</div>
+					))}
+				</div>
+				<div className={styles.arrowContainer}>
+					<Link href='#illustrations'>
+						<a>
+							<div className={styles.arrow}></div>
+						</a>
+					</Link>
 				</div>
 			</section>
 			<section id='illustrations' className={styles.illustrations}>
-				<h1>ILLUSTRATIONS</h1>
+				<h2>ILLUSTRATIONS</h2>
+				<div className={styles.arrowContainer}>
+					<Link href='#infographics'>
+						<a>
+							<div className={styles.arrow}></div>
+						</a>
+					</Link>
+				</div>
+			</section>
+			<section id='infographics' className={styles.infographics}>
+				<h2>Infographics</h2>
+				<div className={styles.arrowContainer}>
+					<Link href='#contact'>
+						<a>
+							<div className={styles.arrow}></div>
+						</a>
+					</Link>
+				</div>
 			</section>
 			<section id='contact' className={styles.contact}>
-				<h1>CONTACT ME</h1>
+				<h2>CONTACT ME</h2>
 			</section>
 		</Layout>
 	);
