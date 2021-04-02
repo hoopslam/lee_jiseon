@@ -1,4 +1,3 @@
-import {useState} from "react";
 import styles from "../styles/Home.module.css";
 import Layout from "../components/Layout";
 import animations from "../public/assets/animations/animations";
@@ -6,16 +5,10 @@ import Header from "../components/Header";
 import Section from "../components/Section";
 
 export default function Home() {
-	const [dimLights, setDimLights] = useState(false);
-
-	const dimBackground = () => {
-		setDimLights(() => !dimLights);
-	}
-
 	return (
-		<Layout dimLights={dimLights}>
+		<Layout>
 			<Header next={'animations'}/>
-			<Section section={'animations'} sectionData={animations} next={'illustrations'} dimBackground={dimBackground} />
+			<Section section={'animations'} sectionData={animations} next={'illustrations'}/>
 			{/* <Section section={'illustrations'} sectionData={animations} next={'infographics'}/>
 			<Section section={'infographics'} sectionData={animations} next={'contact'}/> */}
 			<section id='contact' className={styles.contact}>

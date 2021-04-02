@@ -2,9 +2,8 @@ import React from "react";
 import Head from "next/head";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import styles from "../styles/Layout.module.css";
 
-const Layout = ({ children, dimLights }) => {
+const Layout = ({ children }) => {
 	return (
 		<div>
 			<Head>
@@ -15,15 +14,9 @@ const Layout = ({ children, dimLights }) => {
 					content='Illustrator, Animator, and Character Designer from Seoul!'
 				/>
 			</Head>
-			{dimLights ? (
-				<main className={styles.dimLights}>{children}</main>
-			) : (
-				<>
-					<Navbar />
-					<main>{children}</main>
-					<Footer />
-				</>
-			)}
+			<Navbar />
+			<main>{children}</main>
+			<Footer />
 		</div>
 	);
 };
