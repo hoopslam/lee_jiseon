@@ -1,15 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ArrowButton from "./ArrowButton";
-import styles from "../styles/Section.module.css"
-import Image from 'next/image'
+import styles from "../styles/Section.module.css";
+import Image from "next/image";
+import Modal from "./Modal";
 
-const Section = ({section, sectionData, next}) => {
+const Section = ({ section, sectionData, next, dimBackground}) => {
+	const [modalOn, setModalOn] = useState(false);
+	const [modalData, setModalData] = useState({});
+
+	const modalHandler = (data=null, e=0) => {
+		setModalData({...data, topPosition: (e.pageY - e.clientY)});
+		setModalOn(() => !modalOn);
+	};
+
 	return (
 		<section id={section} className={`styles.${section}`}>
+			{modalOn ? <Modal modalData={modalData} modalHandler={modalHandler} /> : null}
 			<h2 className={styles.sectionTitle}>{section}</h2>
 			<div className={styles.gridContainer}>
 				{sectionData.map((data) => (
-					<div key={data.id} className={styles.gridItem}>
+					<div
+						key={data.id}
+						className={styles.gridItem}
+						onClick={(e) => modalHandler(data, e)}>
 						<Image src={data.thumb} width={300} height={300} />
 					</div>
 				))}
