@@ -15,7 +15,7 @@
 	align-items: center;
 	justify-content: center;
 	grid-gap: 20px;
-	grid-template-columns: 300px;
+	grid-template-columns: 1fr;
 	margin: 75px;
 }
 
