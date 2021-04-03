@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
     return (
         <footer>
-            footer
+            Copyright 2019 니은글로벌. All rights reserved.
         </footer>
     )
 }

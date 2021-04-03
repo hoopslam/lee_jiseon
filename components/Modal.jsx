@@ -46,6 +46,11 @@ const Modal = ({ modalData, modalHandler }) => {
 							height={600}
 						/>
 					</div>
+					<div
+						className={`${styles.footer} ${styles.imageItem}`}
+						style={{ height: "50px", color: "#e9e9e9" }}>
+						{modalData.copy}
+					</div>
 				</div>
 			</div>
 			{console.log(modalData)}

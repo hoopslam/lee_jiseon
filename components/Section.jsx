@@ -15,7 +15,7 @@ const Section = ({ section, sectionData, next}) => {
 
 	return (
 		<section id={section} className={`styles.${section}`}>
-			{modalOn ? <><div className={styles.dim}></div><Modal modalData={modalData} modalHandler={modalHandler}/></> : null}
+			{modalOn ? <><div className={styles.dim} onClick={() => modalHandler()}></div><Modal modalData={modalData} modalHandler={modalHandler}/></> : null}
 			<h2 className={styles.sectionTitle}>{section}</h2>
 			<div className={styles.gridContainer}>
 				{sectionData.map((data) => (

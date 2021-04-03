@@ -12,6 +12,7 @@ const animations = [
         icon1: "/assets/icon/PS-icon.png",
         icon2: "/assets/icon/AE-icon.png",
         icon3: "/assets/icon/AI-icon.png",
+        copy: 'Copyright 2019 니은글로벌. All rights reserved.'
     },
     {
         id: 2,
@@ -26,6 +27,7 @@ const animations = [
         icon1: "/assets/icon/PS-icon.png",
         icon2: "/assets/icon/AE-icon.png",
         icon3: "/assets/icon/AI-icon.png",
+        copy: 'Copyright 2019 니은글로벌. All rights reserved.'
     },
     {
         id: 3,
@@ -40,6 +42,7 @@ const animations = [
         icon1: "/assets/icon/PS-icon.png",
         icon2: "/assets/icon/AE-icon.png",
         icon3: "/assets/icon/AI-icon.png",
+        copy: 'Copyright 2019 니은글로벌. All rights reserved.'
     },
     {
         id: 4,
@@ -54,6 +57,7 @@ const animations = [
         icon1: "/assets/icon/PS-icon.png",
         icon2: "/assets/icon/AE-icon.png",
         icon3: "/assets/icon/AI-icon.png",
+        copy: 'Copyright 2019 니은글로벌. All rights reserved.'
     },    
     {
         id: 5,
@@ -68,6 +72,7 @@ const animations = [
         icon1: "/assets/icon/PS-icon.png",
         icon2: "/assets/icon/AE-icon.png",
         icon3: "/assets/icon/AI-icon.png",
+        copy: 'Copyright 2019 니은글로벌. All rights reserved.'
     },
     {
         id: 6,
@@ -82,6 +87,7 @@ const animations = [
         icon1: "/assets/icon/PS-icon.png",
         icon2: "/assets/icon/AE-icon.png",
         icon3: "/assets/icon/AI-icon.png",
+        copy: 'Copyright 2019 니은글로벌. All rights reserved.'
     },
 ]
 
