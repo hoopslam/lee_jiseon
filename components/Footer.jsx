@@ -1,9 +1,10 @@
 import React from 'react'
+import styles from "../styles/Footer.module.css";
 
 const Footer = () => {
     return (
-        <footer>
-            Copyright 2019 니은글로벌. All rights reserved.
+        <footer className={styles.footer}>
+            &copy; 2021 Lee Ji Seon. All rights reserved.
         </footer>
     )
 }
