@@ -5,14 +5,15 @@ const animations = [
         title: "비즈니스 모션 아이콘",
         year: "2019",
         sub: "Illustration / Animation",
-        src1: "/assets/animations/businessicon/business1.gif",
-        src2: "/assets/animations/businessicon/business2.gif",
-        src3: "/assets/animations/businessicon/business3.gif",
+        src1: "/assets/animations/bluetree/bluetree_01.jpeg",
+        src2: "/assets/animations/bluetree/bluetree_02.jpg",
+        src3: "/assets/animations/bluetree/bluetree_03.jpg",
         description: "스마트한 시대를 주제로 한 비즈니스 모션 아이콘",
         icon1: "/assets/icon/PS-icon.png",
         icon2: "/assets/icon/AE-icon.png",
         icon3: "/assets/icon/AI-icon.png",
-        copy: 'Copyright 2019 니은글로벌. All rights reserved.'
+        copy: 'Copyright 2020 푸른나무재단. All rights reserved.',
+        vimeo: "https://player.vimeo.com/video/531613503"
     },
     {
         id: 2,
@@ -87,7 +88,8 @@ const animations = [
         icon1: "/assets/icon/PS-icon.png",
         icon2: "/assets/icon/AE-icon.png",
         icon3: "/assets/icon/AI-icon.png",
-        copy: 'Copyright 2019 니은글로벌. All rights reserved.'
+        copy: 'Copyright 2019 니은글로벌. All rights reserved.',
+        theme: 'dark'
     },
 ]
 

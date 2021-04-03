@@ -6,6 +6,28 @@ const Modal = ({ modalData, modalHandler }) => {
 	return (
 		<div className={styles.modalContainer}>
 			<div className={styles.contentContainer}>
+				{modalData.vimeo ? (
+					<div
+						style={{
+							padding: "56.25% 0 0 0",
+							marginTop: "90px",
+							position: "relative",
+						}}>
+						<iframe
+							src={`${modalData.vimeo}`}
+							style={{
+								position: "absolute",
+								top: "0",
+								left: "0",
+								width: "100%",
+								height: "100%",
+							}}
+							frameborder='0'
+							allow='autoplay; fullscreen; picture-in-picture'
+							allowfullscreen></iframe>
+					</div>
+				) : null}
+
 				<div className={styles.modalContent}>
 					<div className={styles.modalText}>
 						<div className={styles.titleYear}>
@@ -26,34 +48,33 @@ const Modal = ({ modalData, modalHandler }) => {
 						<Image
 							src={modalData.src1}
 							alt={modalData.description}
-							width={900}
-							height={600}
+							layout='fill'
+							objectFit='contain'
 						/>
 					</div>
 					<div className={styles.imageItem}>
 						<Image
 							src={modalData.src2}
 							alt={modalData.description}
-							width={900}
-							height={600}
+							layout='fill'
+							objectFit='contain'
 						/>
 					</div>
 					<div className={styles.imageItem}>
 						<Image
 							src={modalData.src3}
 							alt={modalData.description}
-							width={900}
-							height={600}
+							layout='fill'
+							objectFit='contain'
 						/>
 					</div>
-					<div
-						className={`${styles.footer} ${styles.imageItem}`}
-						style={{ height: "50px", color: "#e9e9e9" }}>
-						{modalData.copy}
-					</div>
+				</div>
+				<div
+					className={`${styles.footer} ${styles.imageItem}`}
+					style={{ height: "50px"}}>
+					{modalData.copy}
 				</div>
 			</div>
-			{console.log(modalData)}
 			<button className={styles.xButton} onClick={() => modalHandler()}>
 				<div className={styles.x}></div>
 			</button>
@@ -62,6 +83,3 @@ const Modal = ({ modalData, modalHandler }) => {
 };
 
 export default Modal;
-
-// layout='fill'
-// 							objectFit='contain'
