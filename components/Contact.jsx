@@ -1,16 +1,21 @@
 import React from "react";
+import styles from "../styles/Contact.module.css"
 
 const Contact = () => {
+    const sendMessage = e => {
+        e.preventDefault()  //don't redirect the page on submit
+    }
+
 	return (
-		<form method="POST">
-			<label for='name'>Name</label>
-			<input id='name' type='text' autocomplete='name' required />
-            <label for='email'>Email</label>
-			<input id='email' type='email' autocomplete='email' required />
-            <label for='subject'>subject</label>
-			<input id='subject' type='text' autocomplete='subject' required />
-            <label for='message'>Message</label>
-			<input id='message' type='textarea' autocomplete='message' required />
+		<form className={styles.contactContainer} onSubmit={sendMessage}>
+			<label className="sr-only" htmlFor='name'>Name</label>
+			<input id='name' name="name" className={styles.classname} placeholder="Full Name" type='text' autoComplete='name' required />
+            <label className="sr-only" htmlFor='email'>Email</label>
+			<input id='email' name="name" className={styles.classname} placeholder="Full Name" type='email' autoComplete='email' required />
+            <label className="sr-only" htmlFor='subject'>subject</label>
+			<input id='subject' name="name" className={styles.classname} placeholder="Full Name" type='text' autoComplete='subject' required />
+            <label className="sr-only" htmlFor='message'>Message</label>
+			<input id='message' name="name" className={styles.classname} placeholder="Full Name" type='textarea' autoComplete='message' required />
 			<button type='submit'>Send Message</button>
 		</form>
 	);

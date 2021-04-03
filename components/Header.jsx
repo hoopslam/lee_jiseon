@@ -20,7 +20,7 @@ const Header = ({next}) => {
 				</div>
 				<div className={styles.hero}>
 					<Image
-						src='/hero.jpg'
+						src='/hero.gif'
 						alt='Characterized picture of Lee Jiseon with her cat'
 						layout='fill'
 						objectFit='contain'

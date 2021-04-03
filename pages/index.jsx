@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import animations from "../public/assets/animations/animations";
 import Header from "../components/Header";
 import Section from "../components/Section";
+import Contact from "../components/Contact";
 
 export default function Home() {
 	return (
@@ -12,7 +13,7 @@ export default function Home() {
 			{/* <Section section={'illustrations'} sectionData={animations} next={'infographics'}/>
 			<Section section={'infographics'} sectionData={animations} next={'contact'}/> */}
 			<section id='contact' className={styles.contact}>
-				<h2>CONTACT ME</h2>
+				<Contact />
 			</section>
 		</Layout>
 	);
