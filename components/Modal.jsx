@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Modal = ({ modalData, modalHandler }) => {
 	return (
-		<div className={styles.modalContainer} style={{ top: `${modalData.topPosition}px` }}>
+		<div className={styles.modalContainer}>
 			<div className={styles.contentContainer}>
 				<div className={styles.modalContent}>
 					<div className={styles.modalText}>
@@ -26,24 +26,24 @@ const Modal = ({ modalData, modalHandler }) => {
 						<Image
 							src={modalData.src1}
 							alt={modalData.description}
-							layout='fill'
-							objectFit='contain'
+							width={900}
+							height={600}
 						/>
 					</div>
 					<div className={styles.imageItem}>
 						<Image
 							src={modalData.src2}
 							alt={modalData.description}
-							layout='fill'
-							objectFit='contain'
+							width={900}
+							height={600}
 						/>
 					</div>
 					<div className={styles.imageItem}>
 						<Image
 							src={modalData.src3}
 							alt={modalData.description}
-							layout='fill'
-							objectFit='contain'
+							width={900}
+							height={600}
 						/>
 					</div>
 				</div>
@@ -57,3 +57,6 @@ const Modal = ({ modalData, modalHandler }) => {
 };
 
 export default Modal;
+
+// layout='fill'
+// 							objectFit='contain'

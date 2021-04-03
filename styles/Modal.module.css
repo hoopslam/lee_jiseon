@@ -3,17 +3,36 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    left:0;
-    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 450px;
+    height: 100%;
+    padding-bottom: 200px;
+    margin: 20px auto;
     background-color:  #3D3D3D;
     z-index: 100;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.modalContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.contentContainer {
+    display: block;
+    height: 100%;
+    position: relative;
 }
 
 .modalContent {
+    margin: 50px 0 20px;
     display: flex;
+    position: relative;
     flex-direction: column;
-    margin-top: 50px;
     justify-content: space-between;
     align-items: flex-start;
     color: #e9e9e9;
@@ -28,9 +47,11 @@
     gap: 20px;
     justify-content: center;
     grid-template-columns: 1fr;
+    height: 100%;
 }
 
 .imageItem {
+    display: block;
     width: 400px;
     height: 270px;
     position: relative;
@@ -40,7 +61,7 @@
     display: grid;
     grid-template-columns: 30px 30px 30px;
     gap: 7px;
-    margin-bottom: 10px;
+    margin: 0 20px 10px 0;
 }
 
 
@@ -105,9 +126,7 @@
 
 @media screen and (min-width: 600px) {
     .modalContainer {
-        width: 90%;
-        left: 5%;
-        margin-top: 50px;
+        width: 560px;
     }
 
     .imageItem {
@@ -118,8 +137,7 @@
 
 @media screen and (min-width: 900px) {
     .modalContainer {
-        width: 80%;
-        left: 10%;
+        width: 800px;
     }
     .imageItem {
         width: 700px;
@@ -137,8 +155,6 @@
 @media screen and (min-width: 1200px) {
     .modalContainer {
         width: 1050px;
-        left: auto;
-        right: auto;
     }
     .imageItem {
         width: 900px;
