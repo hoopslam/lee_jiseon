@@ -30,7 +30,7 @@
 }
 
 .modalContent {
-    margin: 75px 10px 20px;
+    margin: 75px 20px 20px;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -46,7 +46,7 @@
 .imageContainer {
     display: grid;
     padding-bottom: 50px;
-    margin-bottom: 200px;
+    margin: 0 20px 200px;
     gap: 20px;
     justify-content: center;
     grid-template-columns: 1fr;
@@ -137,7 +137,7 @@
         height: 350px;
     }
     .modalContent {
-        margin: 50px 0 20px;
+        margin: 50px 20px 20px;
     }
 }
 
