@@ -46,27 +46,27 @@ const animations = [
 		thumb: "/assets/animations/motion_thumbnail/2.jpg",
 		projects: [
 			{
-				title: "비즈니스 모션 아이콘",
-				year: "2019",
+				title: "요리 캐릭터",
+				year: "2020",
 				sub: "Illustration / Animation",
 				images: [
 					{
-						source: "/assets/animations/businessicon/business1.gif",
+						source: "/assets/animations/cooking/cooking_1.gif",
 					},
 					{
-						source: "/assets/animations/businessicon/business2.gif",
+						source: "/assets/animations/cooking/cooking_2.gif",
 					},
 					{
-						source: "/assets/animations/businessicon/business3.gif",
+						source: "/assets/animations/cooking/cooking_3.gif",
 					},
 				],
-				description: "스마트한 시대를 주제로 한 비즈니스 모션 아이콘",
+				description: "스스로 요리하는 재밌는 요리캐릭터",
 				icon1: "/assets/icon/PS-icon.png",
 				icon2: "/assets/icon/AE-icon.png",
 				icon3: "/assets/icon/AI-icon.png",
 			},
 		],
-		copy: "Copyright 2019 니은글로벌. All rights reserved.",
+		copy: "Copyright 2020 니은글로벌. All rights reserved.",
 	},
 	{
 		id: 3,
@@ -79,12 +79,6 @@ const animations = [
 				images: [
 					{
 						source: "/assets/animations/global/kid_1.gif",
-					},
-					{
-						source: "/assets/animations/global/kid_2.gif",
-					},
-					{
-						source: "/assets/animations/global/kid_3.gif",
 					},
 				],
 				description: "스마트한 시대를 주제로 한 비즈니스 모션 아이콘",
@@ -149,21 +143,45 @@ const animations = [
 		thumb: "/assets/animations/motion_thumbnail/5.png",
 		projects: [
 			{
-				title: "비즈니스 모션 아이콘",
+				title: "UI 아이콘",
 				year: "2019",
 				sub: "Illustration / Animation",
 				images: [
 					{
-						source: "/assets/animations/businessicon/business1.gif",
+						source: "/assets/animations/uiicon/UI_01.gif",
 					},
 					{
-						source: "/assets/animations/businessicon/business2.gif",
+						source: "/assets/animations/uiicon/UI_02.gif",
 					},
 					{
-						source: "/assets/animations/businessicon/business3.gif",
+						source: "/assets/animations/uiicon/UI_03.gif",
+					},
+					{
+						source: "/assets/animations/uiicon/UI_04.gif",
+					},
+					{
+						source: "/assets/animations/uiicon/UI_05.gif",
+					},
+					{
+						source: "/assets/animations/uiicon/UI_06.gif",
+					},
+					{
+						source: "/assets/animations/uiicon/UI_07.gif",
+					},
+					{
+						source: "/assets/animations/uiicon/UI_08.gif",
+					},
+					{
+						source: "/assets/animations/uiicon/UI_09.gif",
+					},
+					{
+						source: "/assets/animations/uiicon/UI_10.gif",
+					},
+					{
+						source: "/assets/animations/uiicon/UI_11.gif",
 					},
 				],
-				description: "스마트한 시대를 주제로 한 비즈니스 모션 아이콘",
+				description: "User Interface 아이콘 애니메이션",
 				icon1: "/assets/icon/PS-icon.png",
 				icon2: "/assets/icon/AE-icon.png",
 				icon3: "/assets/icon/AI-icon.png",
