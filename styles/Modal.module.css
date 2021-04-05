@@ -48,24 +48,38 @@
 
 .description {
     font-size: .9rem;
+    text-align: start;
+}
+
+.project {
+    margin-top: 75px;
 }
 
 .imageContainer {
     display: grid;
-    padding-bottom: 50px;
     margin: 0 20px 20px;
     gap: 20px;
     justify-content: center;
     grid-template-columns: 1fr;
-    grid-auto-rows: minmax(200px, auto);
     position: relative;
+}
+
+.imageText {
+    color: #868686;
+    font-size: 1rem;
+    letter-spacing: normal;
+    text-align: start;
+    margin: 0;
 }
 
 .imageItem {
     display: block;
-    height: 100%;
     margin: auto 0;
-    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: auto;
 }
 
 .icons {
@@ -139,21 +153,11 @@
     .modalContainer {
         width: 560px;
     }
-
-    .imageItem {
-        width: 500px;
-        height: 330px;
-    }
-
 }
 
 @media screen and (min-width: 900px) {
     .modalContainer {
         width: 800px;
-    }
-    .imageItem {
-        width: 700px;
-        height: 470px;
     }
     .modalContent {
         flex-direction: row;
@@ -167,9 +171,5 @@
 @media screen and (min-width: 1200px) {
     .modalContainer {
         width: 1050px;
-    }
-    .imageItem {
-        width: 900px;
-        height: 600px;
     }
 }

@@ -28,8 +28,8 @@ const Contact = () => {
 					src='/assets/jisunprofile1.jpg'
 					alt='profilepicture'
 					className={styles.profile}
-					width={180}
-					height={180}
+					width={200}
+					height={200}
 					quality={100}
 				/>
 				<h1>About Me</h1>

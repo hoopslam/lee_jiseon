@@ -3,7 +3,8 @@ import styles from "../styles/Modal.module.css";
 import Image from "next/image";
 
 const Modal = ({ modalData, modalHandler }) => {
-	const sources = modalData.sources;
+	const projects = modalData.projects;
+
 	return (
 		<div className={`${styles.modalContainer} ${modalData.dark && styles.dark}`}>
 			<div className={styles.contentContainer}>
@@ -28,34 +29,37 @@ const Modal = ({ modalData, modalHandler }) => {
 							allowfullscreen></iframe>
 					</div>
 				) : null}
-
-				<div className={styles.modalContent}>
-					<div className={styles.modalText}>
-						<div className={styles.titleYear}>
-							<h1 className={styles.title}>{modalData.title}</h1>
-							<h2 className={styles.year}>{modalData.year}</h2>
+				{projects.map((project, i) => (
+					<div key={`${project.title}${i}`} className={styles.project}>
+						<div className={styles.modalContent}>
+							<div className={styles.modalText}>
+								<div className={styles.titleYear}>
+									<h1 className={styles.title}>{project.title}</h1>
+									<h2 className={styles.year}>{project.year}</h2>
+								</div>
+								<h2 className={styles.sub}>{project.sub}</h2>
+								<p className={styles.description}>{project.description}</p>
+							</div>
+							<div className={styles.icons}>
+								<Image src={project.icon1} width={50} height={50} />
+								<Image src={project.icon2} width={50} height={50} />
+								{project.icon3 && (
+									<Image src={project.icon3} width={50} height={50} />
+								)}
+							</div>
 						</div>
-						<h2 className={styles.sub}>{modalData.sub}</h2>
-						<p className={styles.description}>{modalData.description}</p>
-					</div>
-					<div className={styles.icons}>
-						<Image src={modalData.icon1} width={50} height={50} />
-						<Image src={modalData.icon2} width={50} height={50} />
-						{modalData.icon3 && <Image src={modalData.icon3} width={50} height={50} />}
-					</div>
-				</div>
-				<div className={styles.imageContainer}>
-					{sources.map((source) => (
-						<div className={styles.imageItem}>
-							<Image
-								src={source}
-								alt={"Artwork by Ji Seon Lee"}
-								layout='fill'
-								objectFit='contain'
-							/>
+						<div className={styles.imageContainer}>
+							{project.images.map((image, i) => (
+								<div key={`${image}${i}`} className={styles.imageItem}>
+									{image.text ? (
+										<h2 className={styles.imageText}>{image.text}</h2>
+									) : null}
+									<img className={styles.image} src={image.source} alt={"Artwork by Ji Seon Lee"} />
+								</div>
+							))}
 						</div>
-					))}
-				</div>
+					</div>
+				))}
 				<div className={`${styles.footer} ${styles.imageItem}`} style={{ height: "50px" }}>
 					{modalData.copy}
 				</div>
