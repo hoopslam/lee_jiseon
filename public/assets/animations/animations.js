@@ -73,20 +73,6 @@ const animations = [
 		thumb: "/assets/animations/motion_thumbnail/3.png",
 		projects: [
 			{
-				title: "비즈니스 모션 아이콘",
-				year: "2019",
-				sub: "Illustration / Animation",
-				images: [
-					{
-						source: "/assets/animations/global/kid_1.gif",
-					},
-				],
-				description: "스마트한 시대를 주제로 한 비즈니스 모션 아이콘",
-				icon1: "/assets/icon/PS-icon.png",
-				icon2: "/assets/icon/AE-icon.png",
-				icon3: "/assets/icon/AI-icon.png",
-			},
-			{
 				title: "똥냥이 이모티콘",
 				year: "2020",
 				sub: "Illustration / Animation",
@@ -96,6 +82,20 @@ const animations = [
 					},
 				],
 				description: "똥똥한 고양이 캐릭터 이모티콘",
+				icon1: "/assets/icon/PS-icon.png",
+				icon2: "/assets/icon/AE-icon.png",
+				icon3: "/assets/icon/AI-icon.png",
+			},
+			{
+				title: "비즈니스 모션 아이콘",
+				year: "2019",
+				sub: "Illustration / Animation",
+				images: [
+					{
+						source: "/assets/animations/global/kid_1.gif",
+					},
+				],
+				description: "스마트한 시대를 주제로 한 비즈니스 모션 아이콘",
 				icon1: "/assets/icon/PS-icon.png",
 				icon2: "/assets/icon/AE-icon.png",
 				icon3: "/assets/icon/AI-icon.png",

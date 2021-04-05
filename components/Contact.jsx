@@ -32,10 +32,11 @@ const Contact = () => {
 					height={200}
 					quality={100}
 				/>
-				<h1>About Me</h1>
+				<h1>Lee Ji Seon</h1>
+
 				<p>Hello!</p>
 				<p>
-					My name is Ji Seon Lee and I am a freelance Illustrator and Motion Graphics
+					My name is Ji Seon and I am a freelance Illustrator and Motion Graphics
 					Designer from Seoul, South Korea.
 				</p>
 				<p>
