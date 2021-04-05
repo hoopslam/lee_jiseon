@@ -16,7 +16,7 @@
 	justify-content: center;
 	grid-gap: 20px;
 	grid-template-columns: 1fr;
-	margin: 75px;
+	margin: 75px 75px 0;
 }
 
 .gridItem {
