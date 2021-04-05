@@ -8,8 +8,8 @@ const Section = ({ section, sectionData, next}) => {
 	const [modalOn, setModalOn] = useState(false);
 	const [modalData, setModalData] = useState({});
 
-	const modalHandler = (data=null, e=0) => {
-		setModalData({...data, topPosition: (e.pageY - e.clientY)});
+	const modalHandler = (data=null) => {
+		setModalData(data);
 		setModalOn(() => !modalOn);
 	};
 
@@ -22,7 +22,7 @@ const Section = ({ section, sectionData, next}) => {
 					<div
 						key={data.id}
 						className={styles.gridItem}
-						onClick={(e) => modalHandler(data, e)}>
+						onClick={(e) => modalHandler(data)}>
 						<Image src={data.thumb} width={300} height={300} />
 					</div>
 				))}

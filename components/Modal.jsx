@@ -3,8 +3,9 @@ import styles from "../styles/Modal.module.css";
 import Image from "next/image";
 
 const Modal = ({ modalData, modalHandler }) => {
+	const sources = modalData.sources;
 	return (
-		<div className={styles.modalContainer}>
+		<div className={`${styles.modalContainer} ${modalData.dark && styles.dark}`}>
 			<div className={styles.contentContainer}>
 				{modalData.vimeo ? (
 					<div
@@ -44,34 +45,18 @@ const Modal = ({ modalData, modalHandler }) => {
 					</div>
 				</div>
 				<div className={styles.imageContainer}>
-					<div className={styles.imageItem}>
-						<Image
-							src={modalData.src1}
-							alt={modalData.description}
-							layout='fill'
-							objectFit='contain'
-						/>
-					</div>
-					<div className={styles.imageItem}>
-						<Image
-							src={modalData.src2}
-							alt={modalData.description}
-							layout='fill'
-							objectFit='contain'
-						/>
-					</div>
-					<div className={styles.imageItem}>
-						<Image
-							src={modalData.src3}
-							alt={modalData.description}
-							layout='fill'
-							objectFit='contain'
-						/>
-					</div>
+					{sources.map((source) => (
+						<div className={styles.imageItem}>
+							<Image
+								src={source}
+								alt={"Artwork by Ji Seon Lee"}
+								layout='fill'
+								objectFit='contain'
+							/>
+						</div>
+					))}
 				</div>
-				<div
-					className={`${styles.footer} ${styles.imageItem}`}
-					style={{ height: "50px"}}>
+				<div className={`${styles.footer} ${styles.imageItem}`} style={{ height: "50px" }}>
 					{modalData.copy}
 				</div>
 			</div>

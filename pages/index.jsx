@@ -1,9 +1,9 @@
-import styles from "../styles/Home.module.css";
 import Layout from "../components/Layout";
 import animations from "../public/assets/animations/animations";
 import Header from "../components/Header";
 import Section from "../components/Section";
 import Contact from "../components/Contact";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
 	return (

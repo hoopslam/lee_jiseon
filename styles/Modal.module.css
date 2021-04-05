@@ -19,6 +19,11 @@
     color: #545454;
 }
 
+.modalContainer.dark {
+    background-color: rgb(49, 49, 49);
+    color: white;
+}
+
 .footer {
     color: #545454;
 }
@@ -33,7 +38,7 @@
 }
 
 .modalContent {
-    margin: 75px 20px 20px;
+    margin: 0 20px 20px;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -115,7 +120,7 @@
     display: block;
     width: 100%;
     height: 2px;
-    background-color: #3D3D3D;
+    background-color: #505050;
     margin: 5px 0px;
     transform: rotate(45deg);
 }
@@ -127,7 +132,7 @@
     height: 2px;
     margin: 5px 0px;
     transform: rotate(90deg);
-    background-color: #3D3D3D;
+    background-color: #505050;
 }
 
 @media screen and (min-width: 600px) {
@@ -140,9 +145,6 @@
         height: 330px;
     }
 
-    .modalContent {
-        margin: 50px 20px 20px;
-    }
 }
 
 @media screen and (min-width: 900px) {

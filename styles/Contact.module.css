@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.about p {
+    text-align: start;
+}
+
+.contact {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    max-width: 700px;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.contact input {
+    border: none;
+    background-color: rgb(243, 243, 243);
+}
+
+.contact textarea {
+    border: none;
+    background-color:rgb(243, 243, 243) ;
+}
+
+.contact input:focus {
+    outline: none;
+}
+
+.contact textarea:focus {
+    outline: none;
+}
+
+.buttonContainer {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
