@@ -40,7 +40,7 @@ const illustrations = [
 					},
                     {
 						source: "/assets/illustrations/kids/kids-02.png",
-                        text: "2. 숲속 음악태",
+                        text: "2. 숲속 음악대",
 					},
 				],
                 description: "",
@@ -135,9 +135,6 @@ const illustrations = [
 				images: [
 					{
 						source: "/assets/illustrations/jtdy/jdny-01.png",
-					},
-					{
-						source: "/assets/illustrations/jtdy/jdny-02.png",
 					},
 				],
 				description: "",
