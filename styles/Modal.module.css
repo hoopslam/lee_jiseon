@@ -19,6 +19,11 @@
     color: #545454;
 }
 
+.title span {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
 .modalContainer.dark {
     background-color: rgb(49, 49, 49);
     color: white;
@@ -91,6 +96,7 @@
     grid-template-columns: 30px 30px 30px;
     gap: 7px;
     margin: 0 20px 10px 0;
+    direction: rtl;
 }
 
 

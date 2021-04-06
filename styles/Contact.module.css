@@ -9,7 +9,7 @@
 .about {
     width: 100%;
     max-width: 500px;
-    margin: 0 auto;
+    margin: 40px auto;
     padding: 0 10px;
 }
 
@@ -19,6 +19,12 @@
 
 .about p {
     text-align: start;
+}
+
+.about h3 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0;
 }
 
 .contact {

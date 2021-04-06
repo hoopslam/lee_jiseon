@@ -10,11 +10,11 @@ const animations = [
 				images: [
 					{
 						source: "/assets/animations/bluetree/bluetree_01.jpeg",
-						text: "This is a test for my Eggy Wehgee!",
+						text: "1. 캐릭터",
 					},
 					{
 						source: "/assets/animations/bluetree/bluetree_02.jpg",
-						text: "test2",
+						text: "2. 스크린샷",
 					},
 					{
 						source: "/assets/animations/bluetree/bluetree_03.jpg",
@@ -61,6 +61,20 @@ const animations = [
 					},
 				],
 				description: "스스로 요리하는 재밌는 요리캐릭터",
+				icon1: "/assets/icon/PS-icon.png",
+				icon2: "/assets/icon/AE-icon.png",
+				icon3: "/assets/icon/AI-icon.png",
+			},
+			{
+				title: "팝아트 캐릭터",
+				year: "2019",
+				sub: "Illustration / Animation",
+				images: [
+					{
+						source: "/assets/animations/cooking/cartoon_1.gif",
+					},
+				],
+				description: "팝아트 컨셉의 토크하는 캐릭터",
 				icon1: "/assets/icon/PS-icon.png",
 				icon2: "/assets/icon/AE-icon.png",
 				icon3: "/assets/icon/AI-icon.png",

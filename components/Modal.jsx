@@ -44,8 +44,12 @@ const Modal = ({ modalData, modalHandler }) => {
 								<p className={styles.description}>{project.description}</p>
 							</div>
 							<div className={styles.icons}>
-								<Image src={project.icon1} width={50} height={50} />
-								<Image src={project.icon2} width={50} height={50} />
+								{project.icon1 && (
+									<Image src={project.icon1} width={50} height={50} />
+								)}
+								{project.icon2 && (
+									<Image src={project.icon2} width={50} height={50} />
+								)}
 								{project.icon3 && (
 									<Image src={project.icon3} width={50} height={50} />
 								)}
@@ -62,6 +66,9 @@ const Modal = ({ modalData, modalHandler }) => {
 										src={image.source}
 										alt={"Artwork by Ji Seon Lee"}
 									/>
+									{image.footer ? (
+										<div className={styles.footer}>{image.footer}</div>
+									): null}
 								</div>
 							))}
 						</div>

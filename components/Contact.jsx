@@ -33,11 +33,13 @@ const Contact = () => {
 					quality={100}
 				/>
 				<h1>Lee Ji Seon</h1>
+				<h3>Illustrator / Designer</h3>
+				<h3>leejisun5064@gmail.com</h3>
 
 				<p>Hello!</p>
 				<p>
-					My name is Ji Seon and I am a freelance Illustrator and Motion Graphics
-					Designer from Seoul, South Korea.
+					My name is Ji Seon and I am a freelance Illustrator and Motion Graphics Designer
+					from Seoul, South Korea.
 				</p>
 				<p>
 					I love to draw, animate, and spend time with my lovely cat, Miru! If you would
