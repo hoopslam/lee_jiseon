@@ -101,15 +101,15 @@ const animations = [
 				icon3: "/assets/icon/AI-icon.png",
 			},
 			{
-				title: "비즈니스 모션 아이콘",
-				year: "2019",
+				title: "어린이 이모티콘",
+				year: "2020",
 				sub: "Illustration / Animation",
 				images: [
 					{
 						source: "/assets/animations/global/kid_1.gif",
 					},
 				],
-				description: "스마트한 시대를 주제로 한 비즈니스 모션 아이콘",
+				description: "천진난만한 성격의 어린이 캐릭터 이모티콘",
 				icon1: "/assets/icon/PS-icon.png",
 				icon2: "/assets/icon/AE-icon.png",
 				icon3: "/assets/icon/AI-icon.png",
