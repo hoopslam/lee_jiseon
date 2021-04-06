@@ -6,7 +6,10 @@ const Modal = ({ modalData, modalHandler }) => {
 	const projects = modalData.projects;
 
 	return (
-		<div className={`${styles.modalContainer} ${modalData.dark && styles.dark}`}>
+		<div
+			className={`${styles.modalContainer} ${modalData.dark && styles.dark} ${
+				modalData.gray && styles.gray
+			}`}>
 			<div className={styles.contentContainer}>
 				{modalData.vimeo ? (
 					<div
@@ -54,7 +57,11 @@ const Modal = ({ modalData, modalHandler }) => {
 									{image.text ? (
 										<h2 className={styles.imageText}>{image.text}</h2>
 									) : null}
-									<img className={styles.image} src={image.source} alt={"Artwork by Ji Seon Lee"} />
+									<img
+										className={styles.image}
+										src={image.source}
+										alt={"Artwork by Ji Seon Lee"}
+									/>
 								</div>
 							))}
 						</div>
