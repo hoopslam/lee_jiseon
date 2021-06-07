@@ -1,184 +1,203 @@
 .modalContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    font-family:'NanumSquare', sans-serif;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    margin: 30px auto;
-    background-color: white;
-    z-index: 100;
-    overflow-y: scroll;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-    color: #545454;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	font-family: "NanumSquare", sans-serif;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	margin: 30px auto;
+	background-color: white;
+	z-index: 100;
+	overflow-y: scroll;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+	color: #545454;
 }
 
 .modalContainer.dark {
-    background-color: rgb(49, 49, 49);
-    color: white;
+	background-color: rgb(49, 49, 49);
+	color: white;
 }
 
 .modalContainer.gray {
-    background-color: #f2f2f2;
+	background-color: #f2f2f2;
 }
 
 .footer {
-    color: #545454;
+	color: #545454;
+	font-size: 0.8rem;
 }
 
 .modalContainer::-webkit-scrollbar {
-    display: none;
+	display: none;
 }
 
 .contentContainer {
-    display: block;
-    height: 100%;
+	display: block;
+	height: 100%;
 }
 
 .modalContent {
-    margin: 0 40px 20px;
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+	margin: 0 40px 20px;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
 }
 
 .description {
-    font-size: .9rem;
-    text-align: start;
+	font-size: 0.8rem;
+	text-align: start;
 }
 
 .project {
-    margin-top: 75px;
+	margin-top: 75px;
 }
 
 .imageContainer {
-    display: grid;
-    margin: 0 40px 20px;
-    gap: 20px;
-    justify-content: center;
-    grid-template-columns: 1fr;
-    position: relative;
+	display: grid;
+	margin: 0 40px 20px;
+	gap: 20px;
+	justify-content: center;
+	grid-template-columns: 1fr;
+	position: relative;
 }
 
 .imageText {
-    color: #868686;
-    font-size: 1rem;
-    letter-spacing: normal;
-    text-align: start;
-    font-weight: normal;
-    margin: 0;
+	color: #868686;
+	font-size: 0.8rem;
+	letter-spacing: normal;
+	text-align: start;
+	font-weight: normal;
+	margin: 0 0 15px;
 }
 
 .imageItem {
-    display: block;
-    margin: auto 0;
+	display: block;
+	margin: auto 0;
 }
 
 .image {
-    width: 100%;
-    height: auto;
+	width: 100%;
+	height: auto;
 }
 
 .icons {
-    display: grid;
-    grid-template-columns: 30px 30px 30px;
-    gap: 7px;
-    margin: 0 20px 10px 0;
-    direction: rtl;
+	display: grid;
+	grid-template-columns: 30px 30px 30px;
+	gap: 7px;
+	margin: 0 20px 10px 0;
+	direction: rtl;
 }
 
-
 .titleYear {
-    display: flex;
+	display: flex;
 }
 
 .title {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .year {
-    color: #868686;
-    display: flex;
-    align-items: flex-end;
-    margin-left: 15px;
-    margin-bottom: 0;
-    letter-spacing: normal;
-    font-weight: normal;
+	color: #868686;
+	display: flex;
+	align-items: flex-end;
+	margin-left: 15px;
+	margin-bottom: 0;
+	letter-spacing: normal;
+	font-weight: normal;
 }
 
 .sub {
-    color: #868686;
-    font-size: .9rem;
-    letter-spacing: normal;
-    text-align: start;
-    margin-top: 5px;
-    font-weight: normal;
+	color: #868686;
+	font-size: 0.9rem;
+	letter-spacing: normal;
+	text-align: start;
+	margin-top: 5px;
+	font-weight: normal;
 }
 
 .xButton {
-    display: block;
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    appearance: none;
-    background: none;
-    border: none;
-    outline: none;
+	display: block;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	appearance: none;
+	background: none;
+	border: none;
+	outline: none;
 }
 
 .x {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #505050;
-    margin: 5px 0px;
-    transform: rotate(45deg);
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: #505050;
+	margin: 5px 0px;
+	transform: rotate(45deg);
 }
 
 .x::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 2px;
-    margin: 5px 0px;
-    transform: rotate(90deg);
-    background-color: #505050;
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	margin: 5px 0px;
+	transform: rotate(90deg);
+	background-color: #505050;
+}
+
+.subtitleContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.workflow {
+	display: flex;
+	align-items: center;
+}
+
+.workflow::after {
+	content: "";
+	flex: 1;
+	margin-left: 1rem;
+	height: 1px;
+	background-color: #000;
 }
 
 @media screen and (min-width: 600px) {
-    .modalContainer {
-        width: 560px;
-    }
+	.modalContainer {
+		width: 560px;
+	}
 }
 
 @media screen and (min-width: 900px) {
-    .modalContainer {
-        width: 800px;
-    }
-    .modalContent {
-        flex-direction: row;
-        align-items: flex-end;
-    }
-    .icons {
-        margin-left: 100px;
-    }
+	.modalContainer {
+		width: 800px;
+	}
+	.modalContent {
+		flex-direction: row;
+		align-items: flex-end;
+	}
+	.icons {
+		margin-left: 100px;
+	}
 }
 
 @media screen and (min-width: 1200px) {
-    .modalContainer {
-        width: 1200px;
-        padding: 0 200px;
-    }
+	.modalContainer {
+		width: 1200px;
+		padding: 0 200px;
+	}
 }

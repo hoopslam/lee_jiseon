@@ -56,10 +56,24 @@ const Modal = ({ modalData, modalHandler }) => {
 							</div>
 						</div>
 						<div className={styles.imageContainer}>
+							{project.workflow && <h2 className={styles.workflow}>Work Process</h2>}
 							{project.images.map((image, i) => (
 								<div key={`${image}${i}`} className={styles.imageItem}>
+									{image.subtitle ? (
+										<div className={styles.subtitleContainer}>
+											<p className={styles.imgSubtitle}>{image.subtitle}</p>
+											{image.palette ? (
+												<img
+													src={image.palette}
+													alt={"storyboard color palette"}
+													height='25px'
+												/>
+											) : null}
+										</div>
+									) : null}
+
 									{image.text ? (
-										<h2 className={styles.imageText}>{image.text}</h2>
+										<p className={styles.imageText}>{image.text}</p>
 									) : null}
 									<img
 										className={styles.image}
@@ -68,7 +82,7 @@ const Modal = ({ modalData, modalHandler }) => {
 									/>
 									{image.footer ? (
 										<div className={styles.footer}>{image.footer}</div>
-									): null}
+									) : null}
 								</div>
 							))}
 						</div>
