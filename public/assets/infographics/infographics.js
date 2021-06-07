@@ -94,13 +94,13 @@ const infographics = [
 				sub: "Illustration",
 				images: [
 					{
-						source: "/assets/infographics/safety-info/safety-01.png",
+						source: "/assets/infographics/safety-info/issue-01.png",
 					},
                     {
-						source: "/assets/infographics/safety-info/safety-02.png",
+						source: "/assets/infographics/safety-info/issue-02.png",
 					},
                     {
-						source: "/assets/infographics/safety-info/safety-03.png",
+						source: "/assets/infographics/safety-info/issue-03.png",
 					},
 				],
 				description: "통로이미지에서 제공하는 이슈 인포그래픽 이미지를 제작 하였습니다.",
