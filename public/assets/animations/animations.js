@@ -158,34 +158,19 @@ const animations = [
 						source: "/assets/animations/uiicon/UI_01.gif",
 					},
 					{
-						source: "/assets/animations/uiicon/UI_02.gif",
+						source: "/assets/animations/uiicon/userinterface01.gif",
 					},
 					{
-						source: "/assets/animations/uiicon/UI_03.gif",
+						source: "/assets/animations/uiicon/userinterface02.gif",
 					},
 					{
-						source: "/assets/animations/uiicon/UI_04.gif",
+						source: "/assets/animations/uiicon/userinterface03.gif",
 					},
 					{
-						source: "/assets/animations/uiicon/UI_05.gif",
+						source: "/assets/animations/uiicon/userinterface04.gif",
 					},
 					{
-						source: "/assets/animations/uiicon/UI_06.gif",
-					},
-					{
-						source: "/assets/animations/uiicon/UI_07.gif",
-					},
-					{
-						source: "/assets/animations/uiicon/UI_08.gif",
-					},
-					{
-						source: "/assets/animations/uiicon/UI_09.gif",
-					},
-					{
-						source: "/assets/animations/uiicon/UI_10.gif",
-					},
-					{
-						source: "/assets/animations/uiicon/UI_11.gif",
+						source: "/assets/animations/uiicon/userinterface05.gif",
 					},
 				],
 				description: "User Interface 아이콘 애니메이션",

@@ -157,6 +157,10 @@
 	background-color: #505050;
 }
 
+.titleImg {
+    position: relative;
+}
+
 .subtitleContainer {
 	display: flex;
 	justify-content: space-between;

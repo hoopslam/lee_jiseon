@@ -34,6 +34,11 @@ const Modal = ({ modalData, modalHandler }) => {
 				) : null}
 				{projects.map((project, i) => (
 					<div key={`${project.title}${i}`} className={styles.project}>
+						{project.titleImg ? (
+							<div className={styles.titleImg}>
+								<img src={project.titleImg} />
+							</div>
+						): null}
 						<div className={styles.modalContent}>
 							<div className={styles.modalText}>
 								<div className={styles.titleYear}>

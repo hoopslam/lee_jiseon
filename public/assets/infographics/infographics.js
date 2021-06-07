@@ -7,10 +7,26 @@ const infographics = [
 				title: "은평시민대학 사업 소개",
 				year: "2021",
 				sub: "Illustration",
+				workflow: true,
 				images: [
 					{
 						source: "/assets/infographics/globe/globe-01.png",
-					}
+					},
+					{
+						source: "/assets/infographics/globe/globe-02.png",
+					},
+					{
+						source: "/assets/infographics/globe/globe-03.png",
+					},
+					{
+						source: "/assets/infographics/globe/globe-04.png",
+					},
+					{
+						source: "/assets/infographics/globe/globe-05.png",
+					},
+					{
+						source: "/assets/infographics/globe/globe-06.png",
+					},
 				],
 				description: "(주) 타라그래픽스에서 제작 하는 '은평시민대학' 사업소개 ppt에 삽입된 인포그래픽 제작",
 				icon1: "/assets/icon/PS-icon.png",
@@ -30,13 +46,13 @@ const infographics = [
 				sub: "Illustration",
 				images: [
 					{
-						source: "/assets/infographics/ppt-icon/icon01.png",
+						source: "/assets/infographics/ppt-icon/pptinfo-01.png",
 					},
 					{
-						source: "/assets/infographics/ppt-icon/icon02.png",
+						source: "/assets/infographics/ppt-icon/pptinfo-02.png",
 					},
 					{
-						source: "/assets/infographics/ppt-icon/icon03.png",
+						source: "/assets/infographics/ppt-icon/pptinfo-03.png",
 					},
 				],
 				icon1: "/assets/icon/PS-icon.png",
@@ -50,7 +66,7 @@ const infographics = [
 		thumb: "/assets/infographics/thumbnail/03-01.jpg",
 		projects: [
 			{
-				title: "환경분쟁조정위원회",
+				title: "환경분쟁조정위원회 홍보영상 일러스트",
 				year: "2017",
 				sub: "Illustration",
 				images: [
@@ -73,7 +89,7 @@ const infographics = [
 		thumb: "/assets/infographics/thumbnail/04-01.jpg",
 		projects: [
 			{
-				title: "인포그래픽",
+				title: "이슈 인포그래픽",
 				year: "2018 - 2019",
 				sub: "Illustration",
 				images: [
@@ -87,7 +103,7 @@ const infographics = [
 						source: "/assets/infographics/safety-info/safety-03.png",
 					},
 				],
-				description: "각종 상황에 대한 인포그래픽을 제작했습니다.",
+				description: "통로이미지에서 제공하는 이슈 인포그래픽 이미지를 제작 하였습니다.",
 				icon1: "/assets/icon/PS-icon.png",
 				icon2: "/assets/icon/AI-icon.png",
 			},
@@ -100,7 +116,7 @@ const infographics = [
 		thumb: "/assets/infographics/thumbnail/05-01.jpg",
 		projects: [
 			{
-				title: "인포그래픽",
+				title: "이슈 인포그래픽",
 				year: "2018 - 2019",
 				sub: "Illustration",
 				images: [
@@ -111,7 +127,7 @@ const infographics = [
 						source: "/assets/infographics/issue-info/issue02.png",
 					},
 				],
-				description: "각종 상황에 대한 인포그래픽을 제작했습니다.",
+				description: "통로이미지에서 제공하는 이슈 인포그래픽 이미지를 제작 하였습니다.",
 				icon1: "/assets/icon/PS-icon.png",
 				icon2: "/assets/icon/AI-icon.png",
 			},
@@ -123,18 +139,18 @@ const infographics = [
 		thumb: "/assets/infographics/thumbnail/06-01.jpg",
 		projects: [
 			{
-				title: "키즈에듀",
+				title: "키즈 에듀케이션 일러스트",
 				year: "2019",
 				sub: "Illustration",
 				images: [
 					{
-						source: "/assets/infographics/kids-education/kids-ebu-01.png",
+						source: "/assets/infographics/kids-education/kidedu-01.png",
 					},
 					{
-						source: "/assets/infographics/kids-education/kids-ebu-02.png",
+						source: "/assets/infographics/kids-education/kidedu-02.png",
 					},
 				],
-				description: "어린이 교육을 주제로 한 일러스트",
+				description: "통로이미지에서 제공하는 어린이 교육을 주제로 한 일러스트를 제작하였습니다.",
 				icon1: "/assets/icon/PS-icon.png",
 				icon2: "/assets/icon/AI-icon.png",
 			},

@@ -130,7 +130,7 @@ const illustrations = [
 		thumb: "/assets/illustrations/thumbnail/illustration-06.png",
 		projects: [
 			{
-				title: "팟캐스트 '지적인 대화를 위한 넓고 얕은 지식'",
+				title: "팟캐스트 커버 일러스트",
 				year: "2017",
 				sub: "Illustration",
 				images: [
@@ -138,7 +138,7 @@ const illustrations = [
 						source: "/assets/illustrations/jtdy/jdny-01.png",
 					},
 				],
-				description: "재밌게 들었던 팟캐스트에 팬아트를 보내 커버 일러스트로 사용되었습니다.",
+				description: "재밌게 들었던 팟캐스트 '지적인 대화를 위한 넓고 얕은 지식'에 커버 일러스트를 그렸습니다.",
 				icon1: "/assets/icon/PS-icon.png",
 				icon2: "/assets/icon/AI-icon.png",
 			},
