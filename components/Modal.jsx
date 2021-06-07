@@ -56,7 +56,7 @@ const Modal = ({ modalData, modalHandler }) => {
 							</div>
 						</div>
 						<div className={styles.imageContainer}>
-							{project.workflow && <h2 className={styles.workflow}>Work Process</h2>}
+							{project.workflow && <h4 className={styles.workflow}>Work Process</h4>}
 							{project.images.map((image, i) => (
 								<div key={`${image}${i}`} className={styles.imageItem}>
 									{image.subtitle ? (

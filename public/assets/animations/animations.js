@@ -41,7 +41,7 @@ const animations = [
 				images: [
 					{
 						source: "/assets/animations/bluetree/storyboard01.png",
-						text: "|공받은 스토리보드"
+						text: "|재공받은 스토리보드"
 					},
 					{
 						source: "/assets/animations/bluetree/character01.png",
