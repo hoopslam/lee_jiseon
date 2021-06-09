@@ -100,7 +100,7 @@ const illustrations = [
 					},
 					{
 						source: "/assets/illustrations/character/polycube01.jpg",
-						text: "3. 게임 앱 캐릭터 이자인",
+						text: "3. 게임 앱 캐릭터",
 						footer: "Copyright 2014. 폴리큐브.  All rights reserved."
 					},
 				],
