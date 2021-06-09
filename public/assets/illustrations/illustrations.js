@@ -81,18 +81,35 @@ const illustrations = [
 		thumb: "/assets/illustrations/thumbnail/illustration-04.png",
 		projects: [
 			{
-				title: "마법학교 학생 (개인작)",
+				title: "인물 일러스트",
 				year: "2021",
 				sub: "Illustration",
 				images: [
 					{
 						source: "/assets/illustrations/character/character-01.png",
+						text: "1. 마법 학교 학생 컨셉 (개인작)",
+						footer: "Copyright 2021. 이지선. All rights reserved."
+					},
+					{
+						source: "/assets/illustrations/character/blackracoon01.jpg",
+						text: "2. 캐릭터 스티커",
+					},
+					{
+						source: "/assets/illustrations/character/blackracoon02.jpg",
+						footer: "Copyright 2021. 까만너구리.  All rights reserved."
+					},
+					{
+						source: "/assets/illustrations/character/polycube01.jpg",
+						text: "3. 게임 앱 캐릭터 이자인",
+						footer: "Copyright 2014. 폴리큐브.  All rights reserved."
 					},
 				],
 				description: "",
+				icon1: "/assets/icon/PC-icon.png",
+				icon2: "/assets/icon/PS-icon.png",
 			},
 		],
-		copy: "Copyright 2021. 이지선. All rights reserved.",
+		copy: "",
 	},
 	{
 		id: "illust-5",
@@ -121,6 +138,7 @@ const illustrations = [
 				],
 				description: "",
 				icon1: "/assets/icon/PS-icon.png",
+				icon2: "/assets/icon/PC-icon.png",
 			},
 		],
 		copy: "Copyright 2019. 통로이미지. All rights reserved.",
